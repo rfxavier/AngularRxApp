@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ButtonsModule } from 'ngx-bootstrap';
-import { TooltipModule } from 'ngx-bootstrap';
+import { ButtonsModule, TooltipModule, CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,8 @@ import { TooltipModule } from 'ngx-bootstrap';
     BrowserModule,
     AppRoutingModule,
     ButtonsModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
